@@ -3,13 +3,15 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
@@ -35,4 +37,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav a {
+  text-decoration: none;
+  color:black;
+}
+
+.request-image {
+  max-width: 50%;
+}
+
+.title {
+  margin-bottom: 50%;
+}
+
+code {
+  text-align: left;
 }
