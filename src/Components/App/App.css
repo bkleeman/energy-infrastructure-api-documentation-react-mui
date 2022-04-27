@@ -42,6 +42,9 @@
 nav a {
   text-decoration: none;
   color:black;
+  padding: 1rem;
+  float: center;
+  text-align: center;
 }
 
 .request-image {
