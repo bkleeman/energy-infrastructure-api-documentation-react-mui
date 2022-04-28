@@ -10,28 +10,31 @@ export default function Introduction() {
                 <Paper>
                     <NavBar/>
                     <br/>
-                    <Typography variant="h4" component="h1" gutterBottom>
+                    <Typography variant="h4" component="h1" gutterBottom className="title">
                         Energy Infrastructure API
                     </Typography>
                     <br/>
                     <Container>
                         <Paper elevation={12}>
-                            <Typography variant='body1' component='body1'>
-                                This site contains technical documentation for RDCEP's Energy Infrastructure API, currently being used to power the US Energy Infrastructure Visualization.
+                            <div className="main-paper-content">
+                                <Typography variant='body1' component='body1'>
+                                    This site contains technical documentation for RDCEP's Energy Infrastructure API, currently being used to power the US Energy Infrastructure Visualization.
+                                    <br/>
+                                    Here you can find endpoints, examples, and anything else you need to know.
+                                </Typography>
+                                <br/><br/>
+                                <Typography variant='h5' component='h2'>
+                                    Getting Started
+                                </Typography>
                                 <br/>
-                                Here you can find endpoints, examples, and anything else you need to know.
-                            </Typography>
-                            <Typography variant='h5' component='h2'>
-                                Getting Started
-                            </Typography>
-                            <Typography variant='body1' component='body1'>
-                                Visit <a href="http://127.0.0.1:5000/api/v0.1.0/infrastructure/" target="_blank" rel="noreferrer">http://127.0.0.1:5000/api/v0.1.0/infrastructure/</a> for a list of endpoints.
-                                <br/>
-                                View some of our <a href="/code-examples">code examples</a> for tips on how to get started with your use case.
-                            </Typography>
+                                <Typography variant='body1' component='body1'>
+                                    Visit <a href="http://127.0.0.1:5000/api/v0.1.0/infrastructure/" target="_blank" rel="noreferrer">http://127.0.0.1:5000/api/v0.1.0/infrastructure/</a> for a list of endpoints.
+                                    <br/>
+                                    View some of our <a href="/code-examples">code examples</a> for tips on how to get started with your use case.
+                                </Typography>
+                            </div>
                         </Paper>
                     </Container>
-                    
                 </Paper>
             </Container>
         </main>

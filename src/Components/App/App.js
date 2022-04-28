@@ -13,13 +13,12 @@ function App() {
     <Container maxWidth="xl" className="App">
       <Paper>
         <NavBar className="nav-bar"/>
-        {/* <ButtonAppBar/> */}
         <img src={rdcep} className="App-logo" alt="logo" />
         <Typography variant="h4" component="h1" gutterBottom className="title">
           Energy Infrastructure API
         </Typography>
         <br></br>
-        <Container>
+        <Container className='home-content'>
           <Paper elevation={12}>
             <Typography variant='subtitle2' component='subtitle2' gutterBottom>
               Documentation for the Energy Infrastructure API, from the Center for Research-based Decision Making on Climate and Energy Policy

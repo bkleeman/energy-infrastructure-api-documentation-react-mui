@@ -12,7 +12,7 @@ export default function UsEnergyInfrastructureVisualization() {
                 <Paper>
                     <NavBar/>
                         <br/>
-                        <Typography variant="h4" component="h1" gutterBottom>
+                        <Typography variant="h4" component="h1" gutterBottom className="title">
                             Energy Infrastructure API
                         </Typography>
                         <br/>

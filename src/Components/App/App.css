@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align:left;
 }
 
 .App-logo {
@@ -7,6 +7,9 @@
   pointer-events: none;
   margin-top: 5%;
   margin-bottom: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -39,6 +42,19 @@
   }
 }
 
+.centered-text {
+  text-align: center;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.main-paper-content {
+  margin-left: 2em;
+  text-align: left;
+}
+
 nav a {
   text-decoration: none;
   color:black;
@@ -53,6 +69,7 @@ nav a {
 
 .title {
   margin-bottom: 50%;
+  text-align: center;
 }
 
 code {

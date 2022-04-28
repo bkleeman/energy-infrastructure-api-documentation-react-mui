@@ -13,15 +13,17 @@ export default function Endpoints() {
                 <Paper>
                     <NavBar/>
                     <br/>
-                    <Typography variant="h4" component="h1" gutterBottom>
+                    <Typography variant="h4" component="h1" gutterBottom className="title">
                         Energy Infrastructure API
                     </Typography>
                     <br/>
                     <Container>
                         <Paper elevation={12}>
-                            <Typography variant="h5" component='h2'>
-                                Endpoints
-                            </Typography>
+                            <div className='main-paper-content'>
+                                <Typography variant="h5" component='h2'>
+                                    Endpoints
+                                </Typography>
+                            </div>
                             <Container maxWidth="sm">
                                 <EndpointTable></EndpointTable>
                             </Container>
