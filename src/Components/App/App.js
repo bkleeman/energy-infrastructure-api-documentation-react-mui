@@ -11,7 +11,9 @@ function App() {
     <Container maxWidth="xl" className="App">
       <Paper>
         <NavBar className="nav-bar"/>
-        <img src={rdcep} className="App-logo" alt="logo" />
+        <a href="https://rdcep.org" target="_blank" rel="noreferrer" className='img-anchor'>
+            <img src={rdcep} className="App-logo" alt="logo" />
+        </a>
         <Typography variant="h4" component="h1" gutterBottom className="title">
           Energy Infrastructure API
         </Typography>
