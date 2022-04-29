@@ -24,17 +24,17 @@ function App() {
               Documentation for the Energy Infrastructure API, from the Center for Research-based Decision Making on Climate and Energy Policy
           </Typography>
           <br></br>
-          <a href="https://twitter.com/rdceporg" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/rdceporg" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
             <Button variant="contained" color="secondary">
               Twitter
             </Button>
           </a>
-          <a href="https://github.com/RDCEP" target="_blank" rel="noreferrer">
+          <a href="https://github.com/RDCEP" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
             <Button variant="contained" color="secondary">
               Github
             </Button>  
           </a>
-          <Link to='/introduction'>
+          <Link to='/introduction' style={{textDecoration: "none"}}>
           {/* <a href="introduction"> */}
             <Button variant="contained" color="primary">
               Get Started
