@@ -1,12 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import rdcep from './../../rdcep+sig2.png'
 import './App.css';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { Button, Paper } from '@material-ui/core';
-import ButtonAppBar from '../ButtonAppBar'
 import NavBar from '../NavBar'
 function App() {
   return (
@@ -35,11 +33,9 @@ function App() {
             </Button>  
           </a>
           <Link to='/introduction' style={{textDecoration: "none"}}>
-          {/* <a href="introduction"> */}
             <Button variant="contained" color="primary">
               Get Started
             </Button>
-          {/* </a> */}
           </Link>
         </Paper>
         </Container>
