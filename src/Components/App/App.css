@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.img-anchor {
+  display: inline-block;
+}
+
 .main-paper-content {
   margin-left: 2em;
   text-align: left;
@@ -64,8 +68,16 @@ code {
 
 nav a {
   text-decoration: none;
+  /* border-bottom: 1px black solid; */
   color:black;
-  padding: 1rem;
+  padding: 0.5rem 0.1rem;
+  margin: 0.5rem 0.9rem;
   float: center;
   text-align: center;
+}
+
+/* Get the bottom line to appear thicker below the hovered link */
+nav a:hover {
+  border-bottom: 0.3rem black solid;
+  margin: 0.5rem 0.9rem;
 }

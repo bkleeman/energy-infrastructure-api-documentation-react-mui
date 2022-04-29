@@ -7,8 +7,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-function createData(name) {
-  return { name };
+// Create description column
+
+function createData(name, description) {
+  return { name, description };
 }
 
 const rows = [
@@ -69,6 +71,7 @@ export default function EndpointTable() {
         <TableHead>
           <TableRow>
             <TableCell><strong>Endpoint</strong></TableCell>
+            <TableCell><strong>Description</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

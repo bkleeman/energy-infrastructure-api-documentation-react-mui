@@ -9,7 +9,7 @@ import NavBar from '../NavBar'
 function App() {
   return (
     <Container maxWidth="xl" className="App">
-      <Paper>
+      <Paper style={{textAlign: 'center'}}>
         <NavBar className="nav-bar"/>
         <a href="https://rdcep.org" target="_blank" rel="noreferrer" className='img-anchor'>
             <img src={rdcep} className="App-logo" alt="logo" />
@@ -35,6 +35,7 @@ function App() {
             </Button>  
           </a>
           <Link to='/introduction' style={{textDecoration: "none"}}>
+            {/* Kill the button shadow!!! */}
             <Button variant="contained" color="primary">
               Get Started
             </Button>

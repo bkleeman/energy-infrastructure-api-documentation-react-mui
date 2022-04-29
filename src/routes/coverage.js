@@ -13,6 +13,7 @@ export default function Coverage() {
                         Energy Infrastructure API
                     </Typography>
                     <h2>Coverage</h2>
+                    <p>Delete this page</p>
                 </Paper>
             </Container>
         </main>

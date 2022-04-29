@@ -8,7 +8,7 @@ export default function NavBar() {
         <nav
             style={{
               borderBottom: "solid 1px",
-              paddingBottom: "1rem",
+              paddingBottom: ".45rem",
               marginBottom: "1rem",
               textAlign: 'center'
             }}
