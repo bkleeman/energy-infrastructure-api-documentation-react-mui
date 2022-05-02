@@ -32,6 +32,7 @@ const theme = createMuiTheme({
     MuiButton: {
       root: {
         margin: '5px',
+        borderBottom: '0px'
       },
       contained: {
         boxShadow: 'none',

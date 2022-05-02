@@ -8,7 +8,8 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import '../Components/App/App.css'
 
-// Create description column
+// Make endpoints conform to `code` style
+// Move the table to the left
 
 function createData(name, description) {
   return { name, description };
@@ -23,7 +24,7 @@ const rows = [
   createData('/electric_grid/under_100', 'All AC power lines unknown and under 100kV.'),
   createData('/electric_grid/100_300_kV_AC', 'All AC power lines 100-300kV.'),
   createData('/electric_grid/345_735_kV_AC', 'All AC power lines 345-745kV.'),
-  createData('/mines', 'All mines. Note: Our mine coverage only includes coal mines.'),
+  createData('/mines', 'All mines. Mine coverage currently only includes coal mines.'),
   createData('/mines/coal', 'All coal mines.'),
   createData('/mixed_shale_chalk'),
   createData('/mixed_shale_chalk/gas'),
@@ -48,15 +49,15 @@ const rows = [
   createData('/railroads', 'All railroads.'),
   createData('/refineries', 'All refineries. Refinery coverage currently only contains information on petroleum refineries.'),
   createData('/refineries/petroleum', 'All petroleum refineries.'),
-  createData('/shale'),
-  createData('/shale/gas'),
-  createData('/strategic_reserves'),
-  createData('/strategic_reserves/petroleum'),
-  createData('/terminals'),
+  createData('/shale', 'All shale plays.', 'Contains the same information found in the following shale endpoint.'),
+  createData('/shale/gas', 'All gas shale plays.'),
+  createData('/strategic_reserves', 'All strategic reserves. Contains the same information seen in the following strategic reserve endpoint.'),
+  createData('/strategic_reserves/petroleum', 'All strategic petroleum reserves.'),
+  createData('/terminals', 'All liquified natural gas (LNG) terminals.', 'Contains the same information seen in the following terminal endpoints.'),
   createData('/terminals/petroleum_product'),
-  createData('/terminals/import'),
-  createData('/terminals/export'),
-  createData('/terminals/import_and_export'),
+  createData('/terminals/import', 'All liquified natural gas (LNG) import terminals.'),
+  createData('/terminals/export', 'All liquified natural gas (LNG) export terminals.'),
+  createData('/terminals/import_and_export', 'All liquified natural gas (LNG) import and export terminals.'),
   createData('/underground_storage'),
   createData('/underground_storage/gas'),
   createData('/wells', 'All wells. Contains the same information found in the following well endpoints'),

@@ -21,7 +21,7 @@ function App() {
         <Container className='home-content'>
           <Paper elevation={12}>
             <Typography variant='subtitle2' component='subtitle2' gutterBottom>
-              Documentation for the Energy Infrastructure API, from the Center for Research-based Decision Making on Climate and Energy Policy
+              Documentation for the Energy Infrastructure API, from the Center for Robust Decision Making on Climate and Energy Policy
           </Typography>
           <br></br>
           <a href="https://twitter.com/rdceporg" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
