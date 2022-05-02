@@ -11,7 +11,7 @@ function App() {
     <Container maxWidth="xl" className="App">
       <Paper style={{textAlign: 'center'}}>
         <NavBar className="nav-bar"/>
-        <a href="https://rdcep.org" target="_blank" rel="noreferrer" className='img-anchor'>
+        <a href="https://rdcep.org" target="_blank" rel="noreferrer" className='img-anchor' style={{borderBottom: 'none'}}>
             <img src={rdcep} className="App-logo" alt="logo" />
         </a>
         <Typography variant="h4" component="h1" gutterBottom className="title">
@@ -24,17 +24,17 @@ function App() {
               Documentation for the Energy Infrastructure API, from the Center for Robust Decision Making on Climate and Energy Policy
           </Typography>
           <br></br>
-          <a href="https://twitter.com/rdceporg" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+          <a href="https://twitter.com/rdceporg" target="_blank" rel="noreferrer" style={{textDecoration: "none",  borderBottom: 'none'}}>
             <Button variant="contained" color="secondary">
               Twitter
             </Button>
           </a>
-          <a href="https://github.com/RDCEP" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+          <a href="https://github.com/RDCEP" target="_blank" rel="noreferrer" style={{textDecoration: "none", borderBottom: 'none'}}>
             <Button variant="contained" color="secondary">
               Github
             </Button>  
           </a>
-          <Link to='/introduction' style={{textDecoration: "none"}}>
+          <Link to='/introduction' style={{textDecoration: "none", borderBottom: 'none'}}>
             {/* Kill the button shadow!!! */}
             <Button variant="contained" color="primary">
               Get Started

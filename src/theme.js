@@ -32,11 +32,10 @@ const theme = createMuiTheme({
     MuiButton: {
       root: {
         margin: '5px',
-        borderBottom: '0px'
       },
       contained: {
         boxShadow: 'none',
-        margin: '0.5em 0.5em'
+        margin: '0.5em 0.5em',
       }
     },
   },
