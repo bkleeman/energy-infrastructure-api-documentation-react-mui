@@ -6,6 +6,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import '../Components/App/App.css'
 
 // Create description column
 
@@ -66,7 +67,7 @@ const rows = [
 
 export default function EndpointTable() {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="endpoint-table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

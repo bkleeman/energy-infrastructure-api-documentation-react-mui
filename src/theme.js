@@ -33,12 +33,11 @@ const theme = createMuiTheme({
       root: {
         margin: '5px',
       },
-    },
-    MuiTypography: {
-      body1: {
-        
+      contained: {
+        boxShadow: 'none',
+        margin: '0.5em 0.5em'
       }
-    }
+    },
   },
 });
 export default theme;

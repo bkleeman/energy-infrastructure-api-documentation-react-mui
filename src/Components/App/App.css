@@ -40,6 +40,11 @@
   text-align: center;
 }
 
+.endpoint-table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .home-content {
   text-align: center;
 }
