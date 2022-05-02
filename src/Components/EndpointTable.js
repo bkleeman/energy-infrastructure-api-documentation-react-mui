@@ -14,39 +14,39 @@ function createData(name, description) {
 }
 
 const rows = [
-  createData('/active_platforms'),
+  createData('/active_platforms', 'Active platforms'),
   createData('/active_platforms/oil_gas'),
   createData('/biodiesel'),
-  createData('/electric_grid'),
-  createData('/electric_grid/dc'),
-  createData('/electric_grid/under_100'),
-  createData('/electric_grid/345_735_kV_AC'),
-  createData('/electric_grid/100_300_kV_AC'),
-  createData('/mines'),
-  createData('/mines/coal'),
+  createData('/electric_grid', 'All DC power lines, and all AC power lines from under 100kv-735kv. Contains the same information seen in all following electric grid endpoints.'),
+  createData('/electric_grid/dc', 'All DC power lines.'),
+  createData('/electric_grid/under_100', 'All AC power lines unknown and under 100kV.'),
+  createData('/electric_grid/100_300_kV_AC', 'All AC power lines 100-300kV.'),
+  createData('/electric_grid/345_735_kV_AC', 'All AC power lines 345-745kV.'),
+  createData('/mines', 'All mines. Note: Our mine coverage only includes coal mines.'),
+  createData('/mines/coal', 'All coal mines.'),
   createData('/mixed_shale_chalk'),
   createData('/mixed_shale_chalk/gas'),
-  createData('/pipelines'),
-  createData('/pipelines/gas'),
-  createData('/pipelines/oil'),
-  createData('/pipelines/petroleum_product'),
-  createData('/power_plants'),
-  createData('/power_plants/hydroelectric'),
-  createData('/power_plants/coal'),
-  createData('/power_plants/natural_gas'),
-  createData('/power_plants/nuclear'),
-  createData('/power_plants/petroleum'),
-  createData('/power_plants/wind'),
-  createData('/power_plants/solar'),
-  createData('/power_plants/pumped_storage  '),
-  createData('/power_plants/geothermal'),
-  createData('/power_plants/wood'),
-  createData('/power_plants/other_fossil_gases'),
-  createData('/processing_plants'),
-  createData('/processing_plants/gas'),
-  createData('/railroads'),
-  createData('/refineries'),
-  createData('/refineries/petroleum'),
+  createData('/pipelines', 'All pipelines, including gas, oil, and petroleum product pipelines. Contains the same information seen in all following pipeline endpoints.'),
+  createData('/pipelines/gas', 'All gas pipelines.'),
+  createData('/pipelines/oil', 'All oil pipelines'),
+  createData('/pipelines/petroleum_product', 'All petroleum product pipelines.'),
+  createData('/power_plants', 'All power plants. Contains the same information seen in all power plant endpoints.'),
+  createData('/power_plants/hydroelectric', 'All hydroelectric power plants.'),
+  createData('/power_plants/coal', 'All coal power plants.'),
+  createData('/power_plants/natural_gas', 'All natural gas power plants.'),
+  createData('/power_plants/nuclear', 'All nuclear power plants.'),
+  createData('/power_plants/petroleum', 'All petroleum power plants.'),
+  createData('/power_plants/wind', 'All wind power plants.'),
+  createData('/power_plants/solar', 'All solar power plants.'),
+  createData('/power_plants/pumped_storage', 'All pumped storage power plants.'),
+  createData('/power_plants/geothermal', 'All geothermal power plants.'),
+  createData('/power_plants/wood', 'All wood power plants.'),
+  createData('/power_plants/other_fossil_gases', 'All power plants that utilize other fossil gases.'),
+  createData('/processing_plants', 'All processing plants. Processing plant coverage currently only contains information on gas processing plants.'),
+  createData('/processing_plants/gas', 'All gas processing plants.'),
+  createData('/railroads', 'All railroads.'),
+  createData('/refineries', 'All refineries. Refinery coverage currently only contains information on petroleum refineries.'),
+  createData('/refineries/petroleum', 'All petroleum refineries.'),
   createData('/shale'),
   createData('/shale/gas'),
   createData('/strategic_reserves'),
@@ -58,10 +58,10 @@ const rows = [
   createData('/terminals/import_and_export'),
   createData('/underground_storage'),
   createData('/underground_storage/gas'),
-  createData('/wells'),
-  createData('/wells/tx_capcog'),
-  createData('/wells/gas'),
-  createData('/wells/oil'),
+  createData('/wells', 'All wells. Contains the same information found in the following well endpoints'),
+  createData('/wells/tx_capcog', 'All Texas Capital Area Council of Governments wells.'),
+  createData('/wells/gas', 'All gas wells.'),
+  createData('/wells/oil', 'All oil wells.'),
 ];
 
 export default function EndpointTable() {
@@ -70,19 +70,20 @@ export default function EndpointTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell><strong>Endpoint</strong></TableCell>
-            <TableCell><strong>Description</strong></TableCell>
+            <TableCell align='left'><strong>Endpoint</strong></TableCell>
+            <TableCell align='left'><strong>Description</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow
+            <TableRow align='center'
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" align='left'>
                 {row.name}
               </TableCell>
+              <TableCell align='left'>{row.description}</TableCell>
             </TableRow>
           ))}
         </TableBody>
