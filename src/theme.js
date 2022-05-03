@@ -38,6 +38,11 @@ const theme = createMuiTheme({
         margin: '0.5em 0.5em',
       }
     },
+    // MuiTableContainer: {
+    //   root: {
+    //     marginLeft: '-19rem'
+    //   }
+    // }
   },
 });
 export default theme;

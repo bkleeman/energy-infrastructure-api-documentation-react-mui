@@ -3,8 +3,6 @@ import NavBar from "../Components/NavBar"
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import '../Components/App/App.css'
-import curl from './../curl-output.png'
-import python_requests from './../python-requests.png'
 export default function CodeExamples() {
     return (
         <main>

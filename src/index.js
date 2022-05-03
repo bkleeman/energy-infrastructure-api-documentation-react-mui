@@ -9,7 +9,6 @@ import Introduction from './routes/introduction'
 import CodeExamples from './routes/code-examples'
 import Endpoints from './routes/endpoints'
 import Schema from './routes/schema'
-import Coverage from './routes/coverage'
 import UsEnergyInfrastructureVisualization from './routes/us-energy-infrastructure-visualization'
 import theme from './theme';
 // import * as serviceWorker from './serviceWorker';
@@ -24,7 +23,6 @@ ReactDOM.render(
         <Route path="/code-examples" element={<CodeExamples />} />
         <Route path="/endpoints" element={<Endpoints />} />
         <Route path="/schema" element={<Schema />} />
-        <Route path="/coverage" element={<Coverage />} />
         <Route path="/us-energy-infrastructure-visualization" element={<UsEnergyInfrastructureVisualization />} />
       </Routes>
     </BrowserRouter>

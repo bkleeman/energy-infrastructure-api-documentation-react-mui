@@ -68,7 +68,7 @@ const rows = [
 
 export default function EndpointTable() {
   return (
-    <TableContainer component={Paper} className="endpoint-table">
+    <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

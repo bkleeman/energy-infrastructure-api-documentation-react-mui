@@ -15,7 +15,6 @@ export default function ButtonAppBar() {
           <Link to="/"><Button color="inherit">Code Examples</Button></Link>
           <Link to="/"><Button color="inherit">Endpoints</Button></Link>
           <Link to="/"><Button color="inherit">Schema</Button></Link>
-          <Link to="/"><Button color="inherit">Coverage</Button></Link>
           <Link to="/"><Button color="inherit">US Energy Infrastructure Visualization</Button></Link>
         </Toolbar>
       </AppBar>
