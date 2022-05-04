@@ -66,7 +66,6 @@
   text-align: center;
 }
 
-/* get rid of border bottom on buttons on home page and logo anchor, consider applying relevant classes */
 a {
   border-bottom: 1px solid;
   text-decoration: none;
@@ -99,7 +98,6 @@ nav a {
   text-align: center;
 }
 
-/* Get the bottom line to appear thicker below the hovered link */
 nav a:hover {
   border-bottom: 0.3rem black solid;
   margin: 0.5rem 0.9rem;
