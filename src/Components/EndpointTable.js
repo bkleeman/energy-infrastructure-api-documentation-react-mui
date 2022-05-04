@@ -8,7 +8,6 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import '../Components/App/App.css'
 
-// Make endpoints conform to `code` style
 // Move the table to the left
 
 function createData(name, description) {
