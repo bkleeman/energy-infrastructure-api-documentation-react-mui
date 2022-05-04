@@ -83,7 +83,7 @@ export default function EndpointTable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row" align='left'>
-                {row.name}
+                <pre><code>{row.name}</code></pre>
               </TableCell>
               <TableCell align='left'>{row.description}</TableCell>
             </TableRow>
