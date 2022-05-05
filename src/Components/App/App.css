@@ -40,6 +40,36 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .endpoint-table {   
+    margin-left: -18rem!important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .endpoint-table {   
+    margin-left: -16rem!important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .endpoint-table {   
+    margin-left: -15rem!important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .endpoint-table {   
+    margin-left: -12rem!important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .endpoint-table {   
+    margin-left: 0px!important;
+  }
+}
+
 .endpoint-table {
   margin-left: -19rem;
 }
