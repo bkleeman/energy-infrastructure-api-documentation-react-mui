@@ -40,6 +40,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .code-overflow-on-mobile {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1400px) and (min-width: 1301px) {
   .endpoint-table {   
     margin-left: -18rem!important;
@@ -87,8 +93,14 @@
   text-align: left;
 }
 
+@media screen and (max-width: 500px) {
+  .request-image {
+    max-width: 100%!important;
+  }
+}
+
 .request-image {
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .title {

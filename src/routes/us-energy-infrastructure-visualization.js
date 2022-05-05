@@ -30,7 +30,9 @@ export default function UsEnergyInfrastructureVisualization() {
                                     </Typography>
                                     <br/>
                                     <Container maxWidth="m"  className="App">
-                                        <img src={viz} className="request-image" alt="A map of the US showing railroads and coal plants."></img>
+                                        <a href="http://us.infrastructure.rdcep.org" target="_blank" rel="noreferrer">
+                                            <img src={viz} className="request-image" alt="A map of the US showing railroads and coal plants."></img>
+                                        </a>
                                     </Container>
                                 </div>
                             </Paper>

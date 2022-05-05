@@ -29,7 +29,7 @@ export default function CodeExamples() {
                                         In this example, we will use <code>curl</code> set to verbose output to return all coal mines in the United States.
                                     </Typography>
                                     <pre>
-                                        <code>
+                                        <code className="code-overflow-on-mobile">
                                             {"$ curl -v http://127.0.0.1:5000/api/v0.1.0/infrastructure/mines/coal"}
                                         </code>
                                     </pre>
@@ -75,7 +75,7 @@ export default function CodeExamples() {
                                     </Typography>
                                     <br/>
                                     <pre>
-                                        <code style={{textAlign: "left"}}>
+                                        <code className="code-overflow-on-mobile">
                                             {">>> import requests"}<br/>
                                             {'>>> response = requests.get("http://127.0.0.1:5000/api/v0.1.0/infrastructure/wells/oil")'}<br/>
                                             {">>> response.json()"}<br/>

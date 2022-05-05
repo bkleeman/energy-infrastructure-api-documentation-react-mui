@@ -24,7 +24,7 @@ export default function Schema() {
                                     <Typography variant='body1' component='body1'>
                                         Though MongoDB does not require a schema, and we do not enforce one, our data follow a certain standard that we have crafted to best represent and make it most useful. All of our data conform to GeoJSON/MongoDB specification and have certain properties, some of which are required and some of which may be null.
                                         <br/><br/>
-                                        Take for example the following snippet of JSON returned at the <code>{`API_URL_PREFIX/mines/coal`}</code> endpoint:
+                                        Take for example the following snippet of JSON returned at the <code className="code-overflow-on-mobile">{`API_URL_PREFIX/mines/coal`}</code> endpoint:
                                         <br/><br/>
                                         <pre>
                                             <code>
@@ -90,7 +90,7 @@ export default function Schema() {
                                             </code>
                                         </pre>
                                         <br/>
-                                        will route to an API endpoint at <code>{`API_URL_PREFIX/mines/coal`}</code>.
+                                        will route to an API endpoint at <code className="code-overflow-on-mobile">{`API_URL_PREFIX/mines/coal`}</code>.
                                         
                                     </Typography>
                                 </div>
