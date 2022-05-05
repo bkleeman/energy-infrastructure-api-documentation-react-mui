@@ -106,6 +106,12 @@ a:hover {
   border-bottom: 2px solid;
 }
 
+@media screen and (max-width: 500px) {
+  code {   
+    white-space: pre-line;
+  }
+}
+
 code {
   text-align: left;
   display: inline-block;
