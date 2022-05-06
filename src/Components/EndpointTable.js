@@ -82,7 +82,7 @@ export default function EndpointTable() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row" align='left'>
-                <pre><code>{row.name}</code></pre>
+                <pre><code><a href={"http://127.0.0.1:5000/api/v0.1.0/infrastructure"+row.name} target='_blank' rel='noreferrer'>{row.name}</a></code></pre>
               </TableCell>
               <TableCell align='left'>{row.description}</TableCell>
             </TableRow>
