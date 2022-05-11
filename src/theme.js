@@ -38,6 +38,16 @@ const theme = createMuiTheme({
         margin: '0.5em 0.5em',
       }
     },
+    MuiContainer: {
+      root: {
+        '&:has(.endpoint-table)': {
+          paddingLeft: '0px',
+          paddingRight: '0px',
+          marginLeft: '0',
+          marginRight: '0',  
+        }
+      }
+    }
     // MuiTableContainer: {
     //   root: {
     //     marginLeft: '-19rem'

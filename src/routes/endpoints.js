@@ -19,7 +19,7 @@ export default function Endpoints() {
                     <br/>
                     <Container>
                         <Paper elevation={12}>
-                            <div className='main-paper-content'>
+                            <div className='main-paper-content' id="endpoints-title">
                                 <Typography variant="h5" component='h2'>
                                     Endpoints
                                 </Typography>

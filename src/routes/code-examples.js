@@ -30,7 +30,7 @@ export default function CodeExamples() {
                                     </Typography>
                                     <pre>
                                         <code className="code-overflow-on-mobile">
-                                            {"$ curl -v http://127.0.0.1:5000/api/v0.1.0/infrastructure/mines/coal"}
+                                            $ curl -v http://&#8203;127.0.0.1:5000/&#8203;api/&#8203;v0.1.0/&#8203;infrastructure/&#8203;mines/&#8203;coal
                                         </code>
                                     </pre>
                                     <Typography variant="body1" component="body1">
@@ -77,7 +77,7 @@ export default function CodeExamples() {
                                     <pre>
                                         <code className="code-overflow-on-mobile">
                                             {">>> import requests"}<br/>
-                                            {'>>> response = requests.get("http://127.0.0.1:5000/api/v0.1.0/infrastructure/wells/oil")'}<br/>
+                                            >>> response = requests.get("http://&#8203;127.0.0.1:5000/&#8203;api/&#8203;v0.1.0/&#8203;infrastructure/&#8203;wells/&#8203;oil"<br/>
                                             {">>> response.json()"}<br/>
                                         </code>
                                     </pre>
