@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Paper } from "@material-ui/core"
 import NavBar from "../Components/NavBar"
 import Typography from '@material-ui/core/Typography';
@@ -30,7 +31,7 @@ export default function Introduction() {
                                 <Typography variant='body1' component='body1'>
                                     Visit <a href="http://127.0.0.1:5000/api/v0.1.0/infrastructure/" target="_blank" rel="noreferrer">http://127.0.0.1:5000/api/v0.1.0/infrastructure/</a> for a list of endpoints.
                                     <br/>
-                                    View some of our <a href="/code-examples">code examples</a> for tips on how to get started with your use case.
+                                    View some of our <Link to="/code-examples">code examples</Link> for tips on how to get started with your use case.
                                 </Typography>
                             </div>
                         </Paper>
