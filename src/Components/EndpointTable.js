@@ -8,10 +8,8 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import '../Components/App/App.css'
 
-// Move the table to the left
-
-function createData(name, description) {
-  return { name, description };
+function createData(name, description, source) {
+  return { name, description, source };
 }
 
 const rows = [
@@ -73,6 +71,7 @@ export default function EndpointTable() {
           <TableRow>
             <TableCell align='left'><strong>Endpoint</strong></TableCell>
             <TableCell align='left'><strong>Description</strong></TableCell>
+            <TableCell align='left'><strong>Source</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -85,6 +84,7 @@ export default function EndpointTable() {
                 <pre><code><a href={"http://127.0.0.1:5000/api/v0.1.0/infrastructure"+row.name} target='_blank' rel='noreferrer'>{row.name}</a></code></pre>
               </TableCell>
               <TableCell align='left'>{row.description}</TableCell>
+              <TableCell align='left'>{row.source}</TableCell>
             </TableRow>
           ))}
         </TableBody>
