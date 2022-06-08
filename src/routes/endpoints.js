@@ -24,7 +24,7 @@ export default function Endpoints() {
                                     Endpoints
                                 </Typography>
                             </div>
-                            <Container maxWidth="md">
+                            <Container maxWidth="lg">
                                 <div className='endpoint-table'>
                                     <EndpointTable></EndpointTable>
                                 </div>
